@@ -1,4 +1,4 @@
-FROM  brunoe/jupyter-java-base:develop
+FROM  brunoe/jupyter-java:develop
 COPY . ${HOME}/notebooks
 USER root
 RUN chown -R ${NB_UID} ${HOME}
